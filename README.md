@@ -1,6 +1,14 @@
 # Splunk-Query
 This repo is about the basic use of Splunk by the Google Cybersecurity Certificate course. It records how I use the SPL to search the log data needed for the course.
 
+## Table of Contents
+
+1. **[Upload Data for Analysis](#upload-data-for-analysis)**
+2. **[Query for Data](#query-for-data)**
+3. **[Search Only from mailsv Host](#search-only-from-mailsv-host)**
+4. **[Search for Web Cookie through "sourcetype"](#search-for-web-cookie-through-sourcetype)**
+
+
 ## Upload Data for analysis
 - Select the "Add Form" from "Setting"
 ![image](https://github.com/leonlamsc/Splunk-Query/assets/140391766/7f0187d6-887f-4304-8d12-0724b3613fae)
@@ -31,3 +39,5 @@ This repo is about the basic use of Splunk by the Google Cybersecurity Certifica
 ### Search for web cookie through "sourcetype"
 - `index="main" sourcetype="access_combined_wcookie"` to search the source from access_combined_wcookie
 ![image](https://github.com/leonlamsc/Splunk-Query/assets/140391766/43833ed0-1bdd-4a91-b8d3-15d823685055)
+
+These queries can be used in Splunk to search and analyze log data based on the specified criteria, such as index, host, sourcetype, and specific field values. Depending on your data and use case, you can modify and combine these queries to extract meaningful insights from your logs.
