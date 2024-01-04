@@ -1,0 +1,14 @@
+index="main"
+
+Description: This query retrieves events from the "main" index.
+Explanation: The index keyword is used to filter events based on the specified index. In this case, it's looking for events in the "main" index.
+
+index="main" host="mailsv" fail* root
+
+Description: This query narrows down events from the "main" index with a specific host value ("mailsv") and includes events where the fields contain "fail" and "root."
+Explanation: The host keyword filters events based on the specified host value. The * (wildcard) in "fail*" is used to match any field containing words starting with "fail." Similarly, "root" is used to match events where the fields contain the word "root."
+
+index="main" sourcetype="access_combined_wcookie"
+
+Description: This query fetches events from the "main" index with a specific sourcetype value ("access_combined_wcookie").
+Explanation: The sourcetype keyword filters events based on the specified sourcetype value. In this case, it's looking for events with the sourcetype "access_combined_wcookie."
